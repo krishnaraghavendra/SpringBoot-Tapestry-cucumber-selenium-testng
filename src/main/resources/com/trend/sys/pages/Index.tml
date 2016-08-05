@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html  xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter"
+       title="Index Page">
+<head>
+    <title>Index Page</title>
+</head>
+<body>
+<a t:type="pagelink"  page="Home"
+   t:id="homeButton">Home Page</a>
+
+</body>
+</html>
