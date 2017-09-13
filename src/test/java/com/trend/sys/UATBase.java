@@ -21,6 +21,8 @@ public class UATBase {
 
     @Test
     public void runAllTests() {
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
         new TestNGCucumberRunner(getClass()).runCukes();
     }
 }
