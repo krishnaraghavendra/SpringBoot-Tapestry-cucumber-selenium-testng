@@ -11,9 +11,9 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * Created by kabburi on 8/5/2016.
@@ -26,7 +26,8 @@ public class TestHomeSteps extends UATBase {
 
     @Before
     public void setupForTest() {
-        driver = new FirefoxDriver();
+        //driver = new FirefoxDriver();
+        driver = new ChromeDriver();
     }
 
     @After
